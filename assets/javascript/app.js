@@ -2,7 +2,7 @@
 // One to hold questions and one to hold answers
 var questionArray =[
  "Who developed the Difference Engine and Analytical Engine, two punched-card controlled general purpose calculators?",
-    "Who co-invented the TCP/IP Internet protocol with Vint Cerf in 1973?",
+    "Who co-invented the TCP/IP Internet protocol in 1973?",
     "Who developed PHP?",
     "Who is chairman, CEO and founder of America Online?",
     "Who is the inventor of the C++ programming language?",
@@ -42,6 +42,7 @@ var imageArray = ["<img class='center-block img-right' src='assets/images/babbag
 // This variables will hold the html 
 var start;
 var change;
+var end;
 
 // seconds counter, variable to count questions, variables to count answers, selected answer
 var timeCounter = 30;
@@ -159,8 +160,8 @@ function loss() {
 
 // Html for different questions
 function changeHtml() {
-
-	change ="<p class='text-center timer-p'>Time Remaining: <span class='timer'>30</span></p><p class='text-center'>" + questionArray[questionNr] + "</p><p class='first-answer answer'> A. " + (answerArray[questionNr])[0]+ "</p><p class='answer'>B. "+(answerArray[questionNr])[1]+"</p><p class='answer'>C. "+(answerArray[questionNr])[2]+"</p><p class='answer'>D. "+(answerArray[questionNr])[3]+"</p>";
+var i=0;
+	change ="<p class='text-center timer-p'>Time Remaining: <span class='timer'>30</span></p><p class='text-center'>" + questionArray[questionNr] + "</p><p class='first-answer answer'> A. " + answerArray[questionNr][i]+ "</p><p class='answer'>B. "+answerArray[questionNr][i+1]+"</p><p class='answer'>C. "+answerArray[questionNr][i+2]+"</p><p class='answer'>D. "+answerArray[questionNr][i+3]+"</p>";
 	$(".mainArea").html(change);
 }
 
@@ -179,6 +180,6 @@ function end() {
 
 // displays the results
 function endHtml() {
-	change = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + timeCounter + "</span></p>" + "<p class='text-center'>Your results:" + "</p>" + "<p class='summary-correct'>Correct Answers: " + correct + "</p>" + "<p>Wrong Answers: " + incorrect + "</p>" + "<p>Unanswered: " + unanswered + "</p>" + "<p class='text-center reset-button-container'><a class='btn btn-primary btn-lg btn-block reset-button' href='#' role='button'>Reset The Quiz!</a></p>";
-	$(".mainArea").html(change);
+	end = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + timeCounter + "</span></p>" + "<p class='text-center'>Your results:" + "</p>" + "<p class='summary-correct'>Correct Answers: " + correct + "</p>" + "<p>Wrong Answers: " + incorrect + "</p>" + "<p>Unanswered: " + unanswered + "</p>" + "<p class='text-center reset-button-container'><a class='btn btn-primary btn-lg btn-block reset-button' href='#' role='button'>Reset The Quiz!</a></p>";
+	$(".mainArea").html(end);
 }
