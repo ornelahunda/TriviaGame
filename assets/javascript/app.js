@@ -160,6 +160,8 @@ function loss() {
 
 // Html for different questions
 function changeHtml() {
+	console.log("Change called!");
+	console.log(questionNr);
 var i=0;
 	change ="<p class='text-center timer-p'>Time Remaining: <span class='timer'>30</span></p><p class='text-center'>" + questionArray[questionNr] + "</p><p class='first-answer answer'> A. " + answerArray[questionNr][i]+ "</p><p class='answer'>B. "+answerArray[questionNr][i+1]+"</p><p class='answer'>C. "+answerArray[questionNr][i+2]+"</p><p class='answer'>D. "+answerArray[questionNr][i+3]+"</p>";
 	$(".mainArea").html(change);
@@ -167,7 +169,8 @@ var i=0;
 
 
 function end() {
-	if (questionNr < 7) {
+	
+	if (questionNr<6) {
 	questionNr++;
 	changeHtml();
 	timeCounter = 30;
