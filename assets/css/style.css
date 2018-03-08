@@ -1,6 +1,6 @@
+/* background styling */
 .container-fluid{
    background-image: url('assets/images/bcg.png')no-repeat;
-   /* background-size: auto; */
    height: 800px;
 }
 
@@ -10,9 +10,10 @@ font-family: fantasy;
 
 }
 
+
 #title {
     font-size: 80px;
-    padding: 20px;
+    padding: 50px;
 }
 
 
@@ -22,8 +23,25 @@ font-family: fantasy;
     width: 400px; 
 padding: 50px;
 
+
 }
     
-.start{
-    color: white;
+
+.mainArea{
+
+    color:white;
+}
+
+.center{
+    background-color: black;
+    height: 300px;
+}
+p{
+    font-size: 20px;
+    color: rgb(45, 99, 161);
+}
+
+img {
+    height: 200px;
+    width:200px;
 }
