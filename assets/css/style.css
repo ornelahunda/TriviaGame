@@ -1,13 +1,29 @@
+.container-fluid{
+   background-image: url('assets/images/bcg.png')no-repeat;
+   /* background-size: auto; */
+   height: 800px;
+}
 
-h1{ color: aqua;
+#gameName{ color: rgb(62, 190, 190);
+    height: 150px;
+font-family: fantasy;
 
 }
 
+#title {
+    font-size: 80px;
+    padding: 20px;
+}
 
 
 .start-button
-{height: 300px;
-    width: 300px; 
+{
+    height: 100px;
+    width: 400px; 
+padding: 50px;
 
 }
     
+.start{
+    color: white;
+}

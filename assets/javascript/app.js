@@ -58,7 +58,7 @@ var questionNr=0;
 $(document).ready(function () {
 
 function startHtml() {
-start=$("<p class='text-center main-button-container'><a class='btn btn-primary btn-lg btn-block start-button' href='#' role='button'>Start </a></p>");
+start=$("<p class='text-center main-button-container'><a class='btn btn-primary btn-lg start-button' href='#' role='button'>Start </a></p>");
 var pTag =$("<p class='text center'>");
 pTag.text("this is a jquery ptag");
 // $(".mainArea").append(pTag);
